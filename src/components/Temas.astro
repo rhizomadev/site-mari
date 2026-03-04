@@ -1,0 +1,93 @@
+---
+---
+<section class="temas section animate-in animate-up" id="temas">
+  <div class="section__inner">
+    <div class="temas__header">
+      <h2 class="temas__title">Temas que acompanho</h2>
+      <p class="temas__intro">
+        Cada pessoa chega com uma história única. Ainda assim, alguns temas aparecem com frequência no consultório.
+      </p>
+    </div>
+    <div class="temas__grid">
+      <article class="temas__card">
+        <h3 class="temas__card-title">Ansiedade &amp; angústia</h3>
+        <p class="temas__card-text">
+          Quando o corpo e os pensamentos parecem estar sempre em alerta, dificultando descansar, decidir ou estar presente nas relações.
+        </p>
+      </article>
+      <article class="temas__card">
+        <h3 class="temas__card-title">Autoconhecimento &amp; repetição</h3>
+        <p class="temas__card-text">
+          Situações que se repetem na vida, escolhas que parecem sempre levar ao mesmo lugar e a vontade de compreender melhor esses movimentos.
+        </p>
+      </article>
+      <article class="temas__card">
+        <h3 class="temas__card-title">Relações &amp; vínculos</h3>
+        <p class="temas__card-text">
+          Dificuldades nos relacionamentos afetivos, familiares ou de trabalho, limites pouco claros e sentimentos de solidão mesmo acompanhado.
+        </p>
+      </article>
+      <article class="temas__card">
+        <h3 class="temas__card-title">Corpo &amp; adoecimento</h3>
+        <p class="temas__card-text">
+          Impactos emocionais ligados a doenças crônicas e autoimunes, mudanças de vida impostas por diagnósticos e tratamentos.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<style>
+  .temas__header {
+    max-width: 34rem;
+    margin: 0 auto var(--space-xl);
+    text-align: center;
+  }
+
+  .temas__title {
+    margin: 0 0 var(--space-sm);
+  }
+
+  .temas__intro {
+    margin: 0;
+    color: var(--color-text-muted);
+  }
+
+  .temas__grid {
+    display: grid;
+    gap: var(--space-lg);
+  }
+
+  .temas__card {
+    background: var(--color-surface);
+    border-radius: 1.5rem;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.04);
+    padding: var(--space-lg);
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    transition: transform var(--duration-fast) var(--ease-out), box-shadow var(--duration-fast) var(--ease-out),
+      border-color var(--duration-fast) var(--ease-out);
+  }
+
+  .temas__card-title {
+    margin: 0 0 var(--space-xs);
+    font-size: 1.05rem;
+  }
+
+  .temas__card-text {
+    margin: 0;
+    color: var(--color-text-muted);
+  }
+
+  .temas__card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 22px 55px rgba(0, 0, 0, 0.09);
+    border-color: rgba(231, 76, 60, 0.35);
+  }
+
+  @media (min-width: 768px) {
+    .temas__grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+</style>
+

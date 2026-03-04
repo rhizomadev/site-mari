@@ -1,0 +1,47 @@
+<section class="about section animate-in animate-up" id="sobre">
+  <div class="section__inner">
+    <div class="about__card">
+      <h2 class="about__title">Sobre mim</h2>
+      <p class="about__text">
+        Psicóloga pela PUC-PR, especialista em Fundamentos da Teoria e Clínica pelo Unifil em parceria com o Instituto ESPE. Atuo como psicoterapeuta (CRP 08/35436), com ampla experiência em atendimentos online.
+      </p>
+      <p class="about__text">
+        Participei de grupos de estudos em Curitiba (2018–2024) e do projeto Escola da Atopia no HUEM, oferecendo escuta terapêutica a pessoas com doenças autoimunes (2022–2024).
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about {
+    background: transparent;
+  }
+
+  .about__card {
+    background: var(--color-bg-alt);
+    border-radius: 1.75rem;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.04);
+    padding: var(--space-xl);
+  }
+
+  .about__title {
+    margin: 0 0 var(--space-lg);
+    font-size: clamp(1.5rem, 3vw, 2rem);
+  }
+
+  .about__text {
+    margin: 0 0 var(--space-md);
+    color: var(--color-text-muted);
+  }
+
+  .about__text:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 640px) {
+    .about__card {
+      padding: var(--space-lg);
+      border-radius: 1.5rem;
+    }
+  }
+</style>

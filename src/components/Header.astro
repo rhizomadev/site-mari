@@ -1,0 +1,69 @@
+---
+const whatsappUrl = "https://api.whatsapp.com/send/?phone=5542920029674&text=Gostaria+de+agendar+uma+consulta%21&type=phone_number&app_absent=0";
+---
+<header class="header">
+  <div class="header__inner">
+    <a href="#inicio" class="header__logo" aria-label="Mariana Strelow">
+      <img src="/Mariana Strelow - Logo1.png" alt="Mariana Strelow" class="header__logo-image" />
+    </a>
+    <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" class="header__cta" aria-label="Fale comigo pelo WhatsApp">
+      Fale Comigo
+    </a>
+  </div>
+</header>
+
+<style>
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .header__inner {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: var(--space-sm) var(--container-padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header__logo {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .header__logo-image {
+    height: 32px;
+    width: auto;
+    display: block;
+  }
+
+  .header__logo-image:hover {
+    transform: translateY(-1px) scale(1.03);
+    transition: transform var(--duration-fast) var(--ease-out);
+  }
+
+  .header__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+    padding: 0.6rem 1.25rem;
+    background: var(--color-accent);
+    color: white !important;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: background var(--duration-fast) var(--ease-out), transform var(--duration-fast) var(--ease-out);
+  }
+
+  .header__cta:hover {
+    background: var(--color-accent-hover);
+    transform: translateY(-1px);
+  }
+</style>

@@ -1,0 +1,39 @@
+---
+---
+<section class="quote section animate-in animate-up" id="citação">
+  <div class="section__inner">
+    <div class="quote__card">
+      <p class="quote__text">
+        \"Às vezes o que mais pesa não é aquilo que aconteceu, mas o que ainda não encontrou palavras. A terapia é um espaço para que isso possa ser dito com cuidado.\"
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .quote__card {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: var(--space-xl);
+    border-radius: 1.75rem;
+    background: var(--color-surface);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.04);
+    border-left: 4px solid var(--color-accent);
+  }
+
+  .quote__text {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: clamp(1.25rem, 2.3vw, 1.5rem);
+    font-style: italic;
+    color: var(--color-text);
+  }
+
+  @media (max-width: 640px) {
+    .quote__card {
+      padding: var(--space-lg);
+      border-radius: 1.5rem;
+    }
+  }
+</style>
+

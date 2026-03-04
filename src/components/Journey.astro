@@ -1,0 +1,101 @@
+---
+---
+<section class="journey section animate-in animate-up" id="caminho">
+  <div class="section__inner">
+    <div class="section-card journey__card">
+      <h2 class="journey__title">O caminho da terapia</h2>
+      <p class="journey__intro">
+        A psicoterapia é um processo. Ele não precisa estar totalmente claro no começo, é justamente no percurso que as coisas ganham forma.
+      </p>
+      <div class="journey__timeline">
+        <div class="journey__step">
+          <span class="journey__step-label">1. Primeiro contato</span>
+          <p class="journey__step-text">
+            Um momento para você contar o que está acontecendo e fazer perguntas sobre o atendimento, sem compromisso.
+          </p>
+        </div>
+        <div class="journey__step">
+          <span class="journey__step-label">2. Primeiras sessões</span>
+          <p class="journey__step-text">
+            Aos poucos, vamos construindo um espaço de confiança para que você possa falar com mais liberdade.
+          </p>
+        </div>
+        <div class="journey__step">
+          <span class="journey__step-label">3. Processo em andamento</span>
+          <p class="journey__step-text">
+            As sessões se tornam um ponto fixo na semana, onde é possível revisitar histórias, sentimentos e escolhas.
+          </p>
+        </div>
+        <div class="journey__step">
+          <span class="journey__step-label">4. Revisão e continuidade</span>
+          <p class="journey__step-text">
+            Em determinados momentos, revisitamos o percurso, o que mudou e o que ainda precisa de tempo para amadurecer.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .journey__title {
+    margin: 0 0 var(--space-sm);
+  }
+
+  .journey__intro {
+    margin: 0 0 var(--space-lg);
+    color: var(--color-text-muted);
+  }
+
+  .journey__timeline {
+    display: grid;
+    gap: var(--space-lg);
+  }
+
+  .journey__step {
+    position: relative;
+    padding-left: 1.75rem;
+  }
+
+  .journey__step::before {
+    content: "";
+    position: absolute;
+    left: 0.35rem;
+    top: 0.4rem;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 999px;
+    background: var(--color-accent);
+    box-shadow: 0 0 0 4px rgba(231, 76, 60, 0.18);
+  }
+
+  .journey__step-label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+
+  .journey__step-text {
+    margin: 0;
+    color: var(--color-text-muted);
+  }
+
+  @media (min-width: 768px) {
+    .journey__timeline {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: var(--space-md);
+    }
+
+    .journey__step {
+      padding-left: 0;
+      padding-top: 1.75rem;
+      text-align: left;
+    }
+
+    .journey__step::before {
+      left: 0;
+      top: 0;
+    }
+  }
+</style>
+
