@@ -10,11 +10,11 @@ interface Props {
 const { title = "Mariana Strelow — Psicoterapia", description = "Psicoterapia online. Escuta qualificada para seu processo de autoconhecimento.", image } = Astro.props;
 const siteUrl = import.meta.env.SITE || "https://marianastrelow.com";
 const faviconUrl = `${import.meta.env.BASE_URL}favicon.svg`;
-const defaultOgImage = "/Mariana Strelow - Logo.png";
+const defaultOgImage = "/whatsapp.png";
 const ogImage = image ? `${siteUrl}${image.startsWith("/") ? "" : "/"}${image}` : `${siteUrl}${encodeURI(defaultOgImage)}`;
-// Logo.png = 1847x262 — proporção 7:1 (muito larga para o padrão 1.91:1 das redes)
-const ogImageWidth = image ? undefined : 1847;
-const ogImageHeight = image ? undefined : 262;
+// whatsapp.png = 190x95
+const ogImageWidth = image ? undefined : 190;
+const ogImageHeight = image ? undefined : 95;
 const canonicalUrl = Astro.url.pathname === "/" ? siteUrl : `${siteUrl}${Astro.url.pathname}`;
 const gaId = "G-PSVFLHGY4D";
 ---
