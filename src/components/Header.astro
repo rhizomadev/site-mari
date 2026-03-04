@@ -1,10 +1,11 @@
 ---
 const whatsappUrl = "https://api.whatsapp.com/send/?phone=5542920029674&text=Gostaria+de+agendar+uma+consulta%21&type=phone_number&app_absent=0";
+const logoUrl = `${import.meta.env.BASE_URL}Mariana Strelow - Logo1.png`;
 ---
 <header class="header">
   <div class="header__inner">
     <a href="#inicio" class="header__logo" aria-label="Mariana Strelow">
-      <img src="/Mariana Strelow - Logo1.png" alt="Mariana Strelow" class="header__logo-image" />
+      <img src={logoUrl} alt="Mariana Strelow" class="header__logo-image" />
     </a>
     <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" class="header__cta" aria-label="Fale comigo pelo WhatsApp">
       Fale Comigo
